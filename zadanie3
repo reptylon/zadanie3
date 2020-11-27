@@ -1,0 +1,17 @@
+haslo = 'czerwony'
+nr = 1
+nr_max = 4
+
+while nr <= nr_max:
+    strzal = input("Zgadnij nazwe koloru: ")
+    
+    if(strzal == haslo):
+        print("Wygrales. Gratulacje")
+        break
+    else:
+        pozostale_proby = nr_max - nr
+        if pozostale_proby > 0:
+            print(f"Bledne haslo, pozostalo prob: {pozostale_proby}")
+        else:
+            print("Koniec. Przegrana.")
+    nr = nr + 1
